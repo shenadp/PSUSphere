@@ -7,7 +7,7 @@
 This app is a central place to track student involvement in campus groups. It uses Django’s database system to connect:
 - **Colleges** (like College of Sciences)  
 - **Programs** (like BS Computer Science)  
-- **Organizations** (like Association of Computing Students)  
+- **Organizations** (like Society of Information Technology Enthusiasts)  
 - **Students** and their **Memberships**
 
 Admins can add, edit, delete, and view records. They can also create fake data for testing.
@@ -83,7 +83,3 @@ Admins can add, edit, delete, and view records. They can also create fake data f
 
 * *[Shena D. Pebula]* - Repository Owner
 * *[Mary Dianne O. Millendez]* - Collaborator
-
----
-Rev 01 - August 2025
-github.com
