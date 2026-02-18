@@ -5,7 +5,7 @@
 ## What It Does
 
 This app is a central place to track student involvement in campus groups. It uses Django’s database system to connect:
-- **Colleges** (like College of Computing Studies)  
+- **Colleges** (like College of Sciences)  
 - **Programs** (like BS Computer Science)  
 - **Organizations** (like Association of Computing Students)  
 - **Students** and their **Memberships**
