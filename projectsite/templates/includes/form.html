@@ -5,6 +5,7 @@
     {% for error in form.non_field_errors %}
         <p{% if forloop.last %} class="mb-0"{% endif %}>{{ error }}</p>
 </div>
+{% endfor %}
 {% endif %}
 
 {% for field in form %}
