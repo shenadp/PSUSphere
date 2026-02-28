@@ -1,0 +1,11 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">{% if object %} Update Member {% else %} Add Member {% endif %}</h4>
+        <form method="post">
+            {% csrf_token %} {% include 'includes/form.html' %}
+            <button type="submit" class="btn btn-primary btn-rounded">Submit</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

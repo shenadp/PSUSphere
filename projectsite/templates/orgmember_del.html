@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">Delete Member</h4>
+        <form method="post">
+            <p>Are you sure you want to delete "{{ object }}"?</p>
+            {% csrf_token %} {% include 'includes/form.html' %}
+            <button type="submit" class="btn btn-danger btn-rounded">Delete</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
