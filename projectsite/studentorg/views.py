@@ -43,6 +43,7 @@ class OrganizationList (ListView):
     context_object_name = 'organization'
     template_name = 'org_list.html'
     paginate_by = 5
+    ordering = ["college__college_name", "name"]
 
     def get_queryset(self):
         qs = super().get_queryset()
@@ -151,6 +152,13 @@ class ProgramList (ListView):
     context_object_name = 'programs'
     template_name = 'program_list.html'
     paginate_by = 5
+
+    def get_ordering(self):
+        allowed = ["prog_name", "college__college_name"]
+        sort_by = self.request.GET.get("sort_by")
+        if sort_by in allowed:
+            return sort_by
+        return "prog_name"
 
 class ProgramCreateView (CreateView):
     model = Program
